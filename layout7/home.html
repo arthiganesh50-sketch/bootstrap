@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Event</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+    <div class="container-fluid px-4">
+      <div class="d-flex align-items-center">
+        <div class="logo">
+          <div class="one">One</div>
+          <div class="event">Event</div>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center mx-5" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item flex-center text-center"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item flex-center text-center"><a class="nav-link" href="./venue.html">Venue</a></li>
+          <li class="nav-item flex-center text-center"><a class="nav-link" href="./suppliers.html">Suppliers</a></li>
+          <li class="nav-item flex-center text-center"><a class="nav-link" href="./media.html">Media</a></li>
+          <li class="nav-item flex-center text-center"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item flex-center text-center"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex align-items-center">
+        <a href="./login.html" class="btn btn-link text-dark me-2">Login</a>
+        <a href="./signup.html" class="btn btn-dark rounded-pill px-3">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="mb-4">Your Wedding, Your Way</h1>
+      <div class="row justify-content-center search-box">
+        <div class="col-md-3 mb-3 mb-md-0">
+          <select class="form-select">
+            <option selected>Select Category</option>
+            <option>Decorators</option>
+            <option>Venue Planners</option>
+            <option>Choreographers</option>
+            <option>Makeup Artist</option>
+          </select>
+        </div>
+        <div class="col-md-3 mb-3 mb-md-0">
+          <select class="form-select">
+            <option selected>Select Location</option>
+            <option>Chennai</option>
+            <option>Mumbai</option>
+            <option>Madurai</option>
+            <option>Delhi</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-search w-100">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="fw-semibold">Browse By Category</h3>
+      <a href="#" class="text-dark text-decoration-none fw-semibold">View All (10)</a>
+    </div>
+
+    <div id="categoryCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h2.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">DESTINATION WEDDINGS</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h3.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">HONEYMOON & TRAVEL WEDDING</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h4.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">VIDEOGRAPHERS WEDDING</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h5.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">CELEBRANT</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h6.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">MAKEUP ARTIST</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h7.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">WEDDING VENUE</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h8.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">DECORATORS</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h3.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">PHOTOGRAPHERS</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <nav aria-label="Category pagination" class="mt-4">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel" data-bs-slide="prev" aria-label="Previous">
+              &laquo;
+            </a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel" data-bs-slide-to="0">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel" data-bs-slide-to="1">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel" data-bs-slide="next" aria-label="Next">
+              &raquo;
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="fw-semibold">Popular Venue</h3>
+      <a href="#" class="text-dark text-decoration-none fw-semibold">View All (1000)</a>
+    </div>
+
+    <div id="categoryCarousel2" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h2.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">DESTINATION WEDDINGS</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h3.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">HONEYMOON & TRAVEL WEDDING</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h4.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">VIDEOGRAPHERS WEDDING</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h5.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">CELEBRANT</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h6.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">MAKEUP ARTIST</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h7.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">WEDDING VENUE</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h8.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">DECORATORS</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 overflow-hidden">
+                <img src="./images/h3.png" class="card-img-top" style="height:220px; transition:transform .4s;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <div class="card-body text-center">
+                  <h6 class="fw-bold text-uppercase mb-0">PHOTOGRAPHERS</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <nav aria-label="Category pagination" class="mt-4">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel2" data-bs-slide="prev"
+              aria-label="Previous">
+              &laquo;
+            </a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel2" data-bs-slide-to="0">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel2" data-bs-slide-to="1">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" data-bs-target="#categoryCarousel2" data-bs-slide="next" aria-label="Next">
+              &raquo;
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card custom-card shadow-sm">
+      <div class="row align-items-center g-4">
+
+        <div class="col-md-5">
+          <img src="./images/h9.png" alt="h9" class="custom-img rounded">
+        </div>
+
+
+        <div class="col-md-7">
+          <h4 class="card-title">Yours Dreams, Our Dreams...</h4>
+          <p class="card-text mb-4">
+            The "best" wedding photography style is subjective and depends on the couple's preferences.
+          </p>
+          <div class="btn-wrapper">
+            <button class="btn custom-btn">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="fw-semibold mb-0">Featured Videos</h3>
+      <a href="#" class="text-dark text-decoration-none fw-medium">View All (50)</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m1.png" class="card-img-top" alt="m1">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">Wedding Viedo</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m2.png" class="card-img-top" alt="m2">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">Viedo</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m3.png" class="card-img-top" alt="m3">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">Viedo</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m4.png" class="card-img-top" alt="m4">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">Viedo</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m5.png" class="card-img-top" alt="m5">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">afgg</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m6.png" class="card-img-top" alt="m6">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">ghhhj</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m7.png" class="card-img-top" alt="m7">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">jjjjkk</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 border">
+          <img src="./images/m8.png" class="card-img-top" alt="m8">
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold mb-0">jjikk</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h3 class="fw-bold mb-4">Reviews</h3>
+
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center">
+
+            <div class="card bg-light text-muted mx-3"
+              style="width: 28rem; opacity:0.3; border:none; border-radius:1rem;">
+              <div class="card-body">
+                <h5 class="fw-semibold">John</h5>
+                <p>Aihole is one of the least explored architectural treasures in Karnataka, offering a wedding
+                  experience like no other amidst ancient temples and carvings.</p>
+              </div>
+            </div>
+
+            <div class="position-relative">
+              <div class="card bg-secondary-subtle text-dark shadow border-0 mx-3"
+                style="width:40rem; border-radius:1rem;">
+                <div class="card-body px-5 py-5">
+                  <div class="position-absolute top-0 start-50 translate-middle">
+                    <img src="https://via.placeholder.com/80" class="rounded-circle border border-3 border-white"
+                      alt="Celin">
+                  </div>
+                  <h5 class="fw-semibold mt-5">Celin</h5>
+                  <p class="mt-3">Aihole is one of the least explored architectural treasures in Karnataka, offering a
+                    wedding experience like no other amidst ancient temples and carvings.</p>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button"
+                data-bs-target="#reviewCarousel" data-bs-slide="prev" style="width:3rem; height:3rem;">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button"
+                data-bs-target="#reviewCarousel" data-bs-slide="next" style="width:3rem; height:3rem;">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card bg-light text-muted mx-3"
+              style="width: 28rem; opacity:0.3; border:none; border-radius:1rem;">
+              <div class="card-body">
+                <h5 class="fw-semibold">Kavala</h5>
+                <p>Aihole is one of the least explored architectural treasures in Karnataka, offering a wedding
+                  experience like no other amidst ancient temples and carvings.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center">
+
+            <div class="card bg-light text-muted mx-3"
+              style="width: 28rem; opacity:0.3; border:none; border-radius:1rem;">
+              <div class="card-body">
+                <h5 class="fw-semibold">Celin</h5>
+                <p>Aihole is one of the least explored architectural treasures in Karnataka, offering a wedding
+                  experience like no other amidst ancient temples and carvings.</p>
+              </div>
+            </div>
+
+            <div class="position-relative">
+              <div class="card bg-secondary-subtle text-dark shadow border-0 mx-3"
+                style="width:40rem; border-radius:1rem;">
+                <div class="card-body px-5 py-5">
+                  <div class="position-absolute top-0 start-50 translate-middle">
+                    <img src="https://via.placeholder.com/80" class="rounded-circle border border-3 border-white"
+                      alt="John">
+                  </div>
+                  <h5 class="fw-semibold mt-5">John</h5>
+                  <p class="mt-3">Aihole is one of the least explored architectural treasures in Karnataka, offering a
+                    wedding experience like no other amidst ancient temples and carvings.</p>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button"
+                data-bs-target="#reviewCarousel" data-bs-slide="prev" style="width:3rem; height:3rem;">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button"
+                data-bs-target="#reviewCarousel" data-bs-slide="next" style="width:3rem; height:3rem;">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card bg-light text-muted mx-3"
+              style="width: 28rem; opacity:0.3; border:none; border-radius:1rem;">
+              <div class="card-body">
+                <h5 class="fw-semibold">Kavala</h5>
+                <p>Aihole is one of the least explored architectural treasures in Karnataka, offering a wedding
+                  experience like no other amidst ancient temples and carvings.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carousel-indicators position-static mt-4">
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active bg-dark"></button>
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1" class="bg-secondary"></button>
+      </div>
+    </div>
+    <footer class="bg-light text-dark pt-5 pb-3">
+      <div class="container">
+        <div class="row text-start">
+          <div class="logo">
+            <div class="one">One</div>
+            <div class="event">Event</div>
+          </div>
+
+
+          <div class="col-md-3 mb-4">
+            <h3 class="fw-bold"></h3>
+            <h6 class="mt-4 fw-bold">Social Media</h6>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Venues</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark text-decoration-none">Chennai</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Mumbai</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Dubai</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Delhi</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Madurai</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Kanniyakumari</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Suppliers</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark text-decoration-none">Photographers</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Decorators</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Venues Planner</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Choreographers</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Designers</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Makeup Artists</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Careers</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+              <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Newsletter</h6>
+            <p class="mb-2">Subscribe To Get Latest Media Updates</p>
+            <a href="./chat.html" class="btn btn-outline-dark rounded-3 fw-semibold">Live Chat</a>
+          </div>
+        </div>
+
+
+        <div class="text-center mt-4 small text-muted">
+          Made with love by
+          <a href="https://thecreation.design" class="text-decoration-none text-dark fw-semibold" target="_blank">
+            thecreation.design
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
